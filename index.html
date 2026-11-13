@@ -285,10 +285,9 @@
         </ul>
       </div>
 
-      <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
-        <input type="hidden" name="form-name" value="kontakt">
+      <form id="kontakt-form" class="contact-form">
         <p class="bot-field-wrap">
-          <label>Nicht ausfüllen: <input name="bot-field"></label>
+          <label>Nicht ausfüllen: <input name="bot-field" autocomplete="off" tabindex="-1"></label>
         </p>
 
         <label for="name">Name</label>
@@ -304,6 +303,7 @@
         <textarea id="nachricht" name="nachricht" rows="4" required></textarea>
 
         <button type="submit" class="btn btn-primary">Termin anfragen</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
       </form>
 
     </div>

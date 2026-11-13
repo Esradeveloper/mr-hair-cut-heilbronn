@@ -631,6 +631,13 @@ section {
   left: -9999px;
 }
 
+.form-status {
+  min-height: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-gold-dark);
+}
+
 /* ===== Footer ===== */
 .site-footer {
   background: var(--color-ink);
